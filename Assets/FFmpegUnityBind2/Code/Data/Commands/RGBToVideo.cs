@@ -61,7 +61,7 @@ namespace FFmpegUnityBind2
                 .Append(SPACE)
                 .Append(FPS_INSTRUCTION)
                 .Append(SPACE)
-                .Append(fps)
+                .Append(fps.ToString(System.Globalization.CultureInfo.InvariantCulture))
                 .Append(SPACE)
                 .Append(PIXEL_FORMAT_INSTRUCTION)
                 .Append(SPACE)
@@ -90,7 +90,7 @@ namespace FFmpegUnityBind2
                     .Append(SPACE)
                     .Append(TIME_INSTRUCTION)
                     .Append(SPACE)
-                    .Append(totalTime);
+                    .Append(totalTime.ToString(System.Globalization.CultureInfo.InvariantCulture));
             }
 
             //Output Video params
